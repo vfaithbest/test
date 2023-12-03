@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> TRUE NORTH CONSULTING LLC </title>
+<link rel="stylesheet" href="stylesheet.css">
+<link id="g5style" rel="stylesheet" href="stylesheet5.css">
+  <!--Style sheet for social media icons from:https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+	//switches the .css to our default sheet
+	function light() {
+		document.getElementById("g5style").href = "stylesheet5.css";
+		document.getElementById("display").innerHTML = "Darkmode";
+		document.getElementById("display").onclick = dark;
+	}
+	
+	function dark() {
+		document.getElementById("g5style").href = "darkmode.css";
+		document.getElementById("display").innerHTML = "Lightmode";
+		document.getElementById("display").onclick = light;
+	}
+</script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) November 16,2023-->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><img src="Images/TN_Logo.png" class="logo"></a>
+    <!-- Float links to the right. -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="contacts.html" class="w3-bar-item w3-button">Contact</a>
+      <div class="dropdown">
+          <button class="dropbtn">More</button>
+          <div class="dropdown-content">
+              <a href="services.html">Services</a>
+              <a href="newsletter.html">Newsletter</a>
+              <a href="meetthemanagement.html">Meet the Management</a>
+	      <a href="meetthetechs.html">Meet the Techs</a>
+              <a href="investors.html">Meet the Investors</a>
+              <a href="sustainability.html">Sustainability</a>
+	      <a href="gallery.html">Gallery</a>
+              <a href="careers.html">Careers</a>
+			  <button class ="g5stylebtn" id="display" type="button" onclick="dark()">Darkmode</button>
+          </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="imageHeader" >
+  <div>
+    <h1 class= "header-start"> True North Consulting LLC </h1>
+    <p class = "header-end"> Since 2023 </p>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding content-div">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 text-dive" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 border-padding">About</h3>
+	  <p>	Welcome to True North Consulting, where sustainability meets expertise. As we celebrate our one-year milestone, we take pride in being at the forefront of environmental consulting, committed to fostering a harmonious relationship between humanity and the planet we call home.
+At True North, we believe in the power of collaboration, innovation, and responsible practices to create a sustainable future. Our journey began a year ago with a vision to provide unparalleled environmental consulting services that empower businesses and communities to thrive while preserving and enhancing the environment.
+Our team of dedicated experts brings a wealth of knowledge and experience, spanning various disciplines within the environmental sector. </p>
+	 <p>	  From environmental impact assessments to sustainable development planning, we offer a comprehensive suite of services tailored to meet the unique needs of our clients. We understand that each project is distinct, requiring customized solutions that balance ecological responsibility with practical business considerations.
+What sets True North Consulting apart is our unwavering commitment to integrity and excellence. We are driven by a passion for sustainability and a deep sense of responsibility towards the well-being of our planet. By staying abreast of the latest advancements in environmental science and technology, we ensure that our clients receive cutting-edge solutions that align with the highest industry standards.
+At the core of our philosophy is the belief that businesses can thrive while being environmentally conscious. True North Consulting serves as a guide, helping organizations navigate the complex landscape of environmental regulations, minimize their ecological footprint, and capitalize on opportunities for sustainable growth. </p>
+
+	 <p>	  As we reflect on our first year, we express gratitude to our clients, partners, and team members who have been instrumental in our success. Together, we have embarked on a journey to make a positive impact on the world, one project at a time.
+Join us in shaping a greener, more sustainable future with True North Consulting. Together, we can create lasting solutions that benefit both businesses and the environment. Thank you for being a part of our journey. </p>
+
+  </div>
+  
+<!-- End page content -->
+</div>
+
+
+<!-- Footer Faith-->
+<!-- Draft Footer by Faith-->
+<footer class="w3-center w3-padding-16 bottom" id="footer">
+  <h2 id = "FooterTitle" >TRUE NORTH CONSULTING LLC</h2>
+  <p id = "FooterTagline">Moving Forward Together</p>
+  <ul id="Footer-ul">
+    <!--The list idea and parts of the code was inspired by these two websites: https://web-eau.net/en/blog/10-best-footer-html-css-snippets and https://learn.shayhowe.com/html-css/creating-lists/#:~:text=The%20quickest%20way%20to%20display,space%20between%20each%20list%20item.-->
+    <li class = "Ft_Inline_Item"> <a class = "FT-Link"href="about.html">About</a></li>
+    <li class = "Ft_Inline_Item"> <a class = "FT-Link"href="careers.html">Careers</a></li>
+    <li class = "Ft_Inline_Item"> <a class = "FT-Link" href="contacts.html">Contact</a> </li>
+  </ul>
+  <!--to do a two column footer, the code and ideas from w3schools.com was used:https://www.w3schools.com/howto/howto_css_two_columns.asp-->
+  <div class = "FT-row">
+    <div class="FT-columnA">
+        <h3>Follow Us</h3>
+        <!--Social media icons and code idea from:https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+        <p><a href="#" class="fa fa-instagram"></a> @True North_Consulting </p>
+        <p>www.linkedin.com/in/True North </p>
+    </div>
+    <div class="FT-columnB">
+        <h3>Contact Us</h3>
+        <p> 577 River Road, Toronto, ON, L4P 6N4</p>
+        <p> 647-286-4220</p>
+    </div>
+  </div>
+  <!--code for the copyright from: https://careerkarma.com/blog/html-copyright-symbol/-->
+  <p id="Copyright">&copy; 2023 True North. All rights reserved. </p>
+</footer>
+
+</body>
+</html>
